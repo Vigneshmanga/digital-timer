@@ -76,6 +76,16 @@ class DigitalTimer extends Component {
 
   render() {
     const {timerOn, minutes, seconds, timer} = this.state
+    let startBtnAlt
+    let startBtnSrc
+    if (timerOn) {
+      startBtnAlt = 'pause icon'
+      startBtnSrc =
+        'https://assets.ccbp.in/frontend/react-js/pause-icon-img.png'
+    } else {
+      startBtnAlt = 'play icon'
+      startBtnSrc = 'https://assets.ccbp.in/frontend/react-js/play-icon-img.png'
+    }
 
     return (
       <div className="bg-container">
@@ -99,19 +109,11 @@ class DigitalTimer extends Component {
                   className="pause-btn"
                   onClick={this.update}
                 >
-                  {timerOn ? (
-                    <img
-                      className="btn-icon"
-                      alt="pause icon"
-                      src="https://assets.ccbp.in/frontend/react-js/pause-icon-img.png"
-                    />
-                  ) : (
-                    <img
-                      className="btn-icon"
-                      alt="play icon"
-                      src="https://assets.ccbp.in/frontend/react-js/play-icon-img.png"
-                    />
-                  )}
+                  <img
+                    alt={startBtnAlt}
+                    src={startBtnSrc}
+                    className="btn-icon"
+                  />
                   {timerOn ? 'Pause' : 'Start'}
                 </button>
               </div>
