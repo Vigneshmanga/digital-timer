@@ -1,0 +1,116 @@
+/* Write your CSS here */
+.bg-container {
+  height: 100vh;
+  padding: 100px;
+  background-image: linear-gradient(to right, #e3fff8, #cffcf1, #defafe);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading {
+  font-family: 'Roboto';
+  font-size: 50px;
+  color: black;
+  text-align: center;
+}
+.timer-container {
+  display: flex;
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+}
+.count-container {
+  width: 600px;
+  height: 550px;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.count {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: #00d9f5;
+  font-weight: bold;
+  font-family: 'Roboto';
+  font-size: 40px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.running-counter {
+  font-size: 40px;
+  margin: 0px;
+}
+.count p {
+  margin: 0px;
+}
+.timer-state {
+  color: black;
+  font-size: 22px;
+}
+.timer-setting-container {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pause-play-container {
+  display: flex;
+}
+.pause-container,
+.reset-container {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.reset-btn,
+.pause-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  font-size: 30px;
+  font-weight: 700;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-icon {
+  width: 40px;
+  margin-right: 10px;
+}
+.set-timer-desc {
+  font-family: 'Roboto';
+  font-size: 18px;
+  margin-top: 0px;
+  font-weight: bold;
+  color: black;
+}
+.timer-adjusting-container {
+  display: flex;
+  align-items: center;
+}
+.timer-adjusting-container p {
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #7eddb2, #00d9f5);
+  height: 50px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  margin: 0px 10px;
+  font-size: 30px;
+}
+.timer-adjusting-container button {
+  background-color: transparent;
+  font-family: 'Roboto';
+  border: none;
+  font-size: 40px;
+}
