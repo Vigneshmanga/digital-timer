@@ -12,6 +12,11 @@ class DigitalTimer extends Component {
   }
 
   startTimer = () => {
+    this.setState({
+      timerOn: true,
+      resetEnabled: false,
+    });
+    
     this.intervalId = setInterval(() => {
       this.setState(prevState => {
         if (prevState.minutes === 0 && prevState.seconds === 0) {
